@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+.slider {
+    width: 80%;
+    margin: 0px auto;
+    background: #333333;
+    padding: 15px;
+    overflow: hidden;
+}
+input {
+    display: none;
+}
+.images {
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+.images__container {
+    width: 400%;
+    display: flex;
+}
+img {
+    width: 25%;
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+.other {
+    display: flex;
+}
+.names {
+    width: 60%;
+    overflow: hidden;
+}
+.names__container {
+    width: 400%;
+    display: flex;
+}
+.names__container > div {
+    width: 25%;
+    transition: all 0.5s ease;
+}
+.nav {
+    width: 40%;
+    display: flex;
+    justify-content: right;
+}
+.bullet {
+    margin: 0px 6px;
+    height: 24px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.bullet div {
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    background: #5e7fee;
+    border: 2px solid #5e7fee;
+}
+.bullet:hover div {
+    background: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Стили при переключении */
+
+#radio-1:checked ~ .images #img-1 {
+    margin-left: 0;
+}
+#radio-2:checked ~ .images #img-1 {
+    margin-left: -25%;
+}
+#radio-3:checked ~ .images #img-1 {
+    margin-left: -50%;
+}
+#radio-4:checked ~ .images #img-1 {
+    margin-left: -75%;
+}
+
+#radio-1:checked ~ .other #txt-1 {
+    margin-left: 0;
+}
+#radio-2:checked ~ .other #txt-1 {
+    margin-left: -25%;
+}
+#radio-3:checked ~ .other #txt-1 {
+    margin-left: -50%;
+}
+#radio-4:checked ~ .other #txt-1 {
+    margin-left: -75%;
+}
+
+#radio-1:checked ~ .other #bullet-1 {
+    background: #333333;
+    border: 2px solid #5e7fee;
+}
+#radio-2:checked ~ .other #bullet-2 {
+    background: #333333;
+    border: 2px solid #5e7fee;
+}
+#radio-3:checked ~ .other #bullet-3 {
+    background: #333333;
+    border: 2px solid #5e7fee;
+}
+#radio-4:checked ~ .other #bullet-4 {
+    background: #333333;
+    border: 2px solid #5e7fee;
+}
+
+#radio-1:checked ~ .other .bullet:hover #bullet-1 {
+    background: #333333;
+    border: 2px solid #ffffff;
+}
+#radio-2:checked ~ .other .bullet:hover #bullet-2 {
+    background: #333333;
+    border: 2px solid #ffffff;
+}
+#radio-3:checked ~ .other .bullet:hover #bullet-3 {
+    background: #333333;
+    border: 2px solid #ffffff;
+}
+#radio-4:checked ~ .other .bullet:hover #bullet-4 {
+    background: #333333;
+    border: 2px solid #ffffff;
+}
