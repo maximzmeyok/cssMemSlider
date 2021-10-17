@@ -130,3 +130,28 @@ img {
     background: #333333;
     border: 2px solid #ffffff;
 }
+
+/* Медиазапросы и адаптивность */
+
+@media (max-width: 768px) {
+    .slider {
+        width: 90%;
+    }
+    .other {
+        flex-direction: column-reverse;
+    }
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+    .names {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .slider {
+        width: 100%;
+    }
+}
